@@ -1,0 +1,274 @@
+nav a {
+  color: rgba(0,0,0,.54);
+  font-size: 30px;
+  padding: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Abril Fatface', cursive;
+}
+
+nav li {
+  display: inline;
+}
+
+body {
+  text-align: center;
+}
+
+.indexnav ul {
+  padding-top: 40px;
+  text-align: left;
+}
+
+nav {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+nav ul {
+  display: flex;
+}
+
+.indexnav {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.current {
+  color: rgb(0,0,0);
+  text-decoration: underline;
+}
+
+.skip {
+  position: relative;
+  left: -2000px;
+}
+
+.skip:focus {
+  position: static;
+  border: 2px solid black;
+}
+
+/* table bordering style */
+table {
+  border-collapse: collapse;
+  position: relative;
+  margin: 0 auto;
+}
+th,
+td {
+  border: 3px solid #c6c7cc;
+  padding: 10px 15px;
+}
+th {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 40px;
+  justify-items: center;
+}
+
+.container li{
+  list-style: none;
+}
+
+.contact_container {
+  display: grid;
+  grid-row-gap: 40px;
+  justify-items: center;
+}
+
+.contact_container div {
+  font-size: 20px;
+}
+
+.contactheader {
+  margin-bottom: 20px;
+}
+
+.indexcontainer {
+  display: grid;
+  column-gap: 40px;
+  justify-content: center;
+  grid-row-gap: 40px;
+}
+
+
+.fab {
+  display: inline;
+  font-size: 32px;
+  color: black;
+}
+
+.fas {
+  display: inline;
+  font-size: 32px;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.imagearea {
+  background-color: black;
+  background-image: url("../images/teampic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -50px;
+  height: 490px;
+}
+
+
+.background h1 {
+  color: white;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
+
+.background p {
+  line-height: 1.3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+
+.background h2{
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  color: rgb(184,184 ,189);
+  font-size: 40px;
+}
+
+.background .indexcontainer {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.background a {
+  color: white;
+}
+
+.indexnav a {
+  color: white;
+}
+
+.background .fab {
+  color: white;
+}
+
+.background .fas {
+  color: white;
+}
+
+.background footer {
+  overflow: auto;
+  background: rgb(57, 55, 61);
+  padding: 25px;
+}
+
+.navimg {
+  height: 70px;
+  width: 70px;
+  margin-top: -30px;
+  margin-bottom: -20px;
+  margin-right: -10px;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 25px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+
+/* full screen */
+@media screen and (min-width: 1000px) {
+  .indexcontainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+
+  }
+  .container > div > ul > li {
+    text-align: left;
+  }
+
+  .container li{
+    list-style: circle;
+  }
+
+  .container > div > h2 {
+    text-align: left;
+  }
+
+  .historyheader {
+    margin-bottom: 30px;
+  }
+
+  .contact_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contactfooter {
+    padding-top: 30px;
+  }
+
+}
+
+/* ipad */
+@media screen and (min-width : 700px) and (max-width : 1245px) {
+  .box {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .contact_container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact_container img {
+    width: 350px;
+  }
+  .contactfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 3px;
+  }
+  .navimg {
+    margin-bottom: 10px;
+  }
+}
